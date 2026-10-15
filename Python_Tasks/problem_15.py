@@ -3,12 +3,14 @@
 # HackerRank Link: https://www.hackerrank.com/challenges/word-order/problem
 
 n = int(input())
-words = []
+words = {}
+
 for i in range(n):
     word = input()
-    words.append(word)
+    if word in words:
+        words[word] += 1
+    else:
+        words[word] = 1
 
-print(len(set(words)))
-
-for word in dict.fromkeys(words):
-    print(words.count(word), end=" ")
+print(len(words))
+print(*words.values())
