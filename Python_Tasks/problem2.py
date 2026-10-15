@@ -1,4 +1,5 @@
-Arithmetic Operators
+# Problem Name: [Arithmetic Operators]
+# HackerRank Link: [https://www.hackerrank.com/challenges/python-arithmetic-operators/problem]
 
 n1=int(input())
 n2=int(input())
